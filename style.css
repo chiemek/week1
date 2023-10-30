@@ -1,0 +1,155 @@
+/* font import */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap");
+
+/* css reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  background-color: rgb(18, 33, 69);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  width: 90vw;
+  height: 89vh;
+  background-color: rgb(18, 50, 80);
+  border-radius: 1rem;
+
+  align-items: center;
+  padding-top: 1.5rem;
+  gap: 2rem;
+}
+
+.contain {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .firstImg {
+  width: 80vw;
+  height: 40vh;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+main .firstDiv {
+  margin-inline: 2rem;
+  font-family: "Outfit", sans-serif;
+}
+
+main .firstDiv h3 {
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+main .firstDiv p {
+  color: rgb(142, 156, 167);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.secondDiv,
+.left,
+.right,
+.last {
+  display: flex;
+}
+
+.left,
+.right {
+  gap: 5px;
+}
+
+.secondDiv {
+  justify-content: space-between;
+  width: 90vw;
+  padding-inline: 2rem;
+  color: rgb(142, 156, 167);
+  padding-bottom: 1.5rem;
+}
+
+hr {
+  /* border-top: 0.5px rgb(142, 156, 167); */
+  padding-left: 2rem;
+  width: 70vw;
+  margin-inline: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.last {
+  padding-inline: 1.5rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lastImg {
+  width: 4rem;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.last p {
+  font-size: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgb(142, 156, 167);
+}
+
+.last .wd {
+  color: white;
+}
+
+@media (min-width: 550px) {
+  main {
+    width: 25rem;
+  }
+
+  main .firstImg {
+    width: 22rem;
+  }
+
+  hr {
+    width: 21rem;
+  }
+
+  .secondDiv {
+    justify-content: space-between;
+    width: 25rem;
+    padding-inline: 2rem;
+    color: rgb(142, 156, 167);
+    padding-bottom: 1.5rem;
+  }
+
+  .last .wd,
+  main .firstDiv h3 {
+    color: rgb(18, 255, 239);
+  }
+
+  .hoveri:hover {
+    position: relative;
+    background-color: aqua;
+    filter: opacity(0.3) brightness(150%);
+    /* opacity: 0.2; */
+    width: 22rem;
+    height: 40vh;
+    border-radius: 1rem;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    z-index: 3;
+  }
+}
