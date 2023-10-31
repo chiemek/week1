@@ -33,6 +33,7 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 main .firstImg {
@@ -114,6 +115,20 @@ hr {
   color: white;
 }
 
+.hoveri {
+  position: absolute;
+  background-color: aqua;
+  filter: opacity(0.3);
+  width: 21rem;
+  height: 40vh;
+  border-radius: 1rem;
+  object-fit: cover;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 550px) {
   main {
     width: 25rem;
@@ -140,16 +155,17 @@ hr {
     color: rgb(18, 255, 239);
   }
 
-  .hoveri:hover {
+  main .contain {
     position: relative;
-    background-color: aqua;
-    filter: opacity(0.3) brightness(150%);
-    /* opacity: 0.2; */
+  }
+
+  .hoveri {
     width: 22rem;
-    height: 40vh;
-    border-radius: 1rem;
-    object-fit: cover;
-    margin-bottom: 2rem;
-    z-index: 3;
+  }
+
+  .fa-eye {
+    font-size: 2rem;
+    color: white;
+    filter: opacity(2);
   }
 }
